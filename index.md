@@ -1,8 +1,8 @@
-# 👋 Hello!
+#  Hello!
 
 Welcome to my GitHub Pages site.
 
-This is a test homepage. I'll build more soon!
+This is Jingyang Feng. Also you can call me YukiNA.
 
-- ✨ GitHub: [YukiNA2020](https://github.com/YukiNA2020)
-- 📫 Contact: JYfengswufe@163.com
+- GitHub: [YukiNA2020](https://github.com/YukiNA2020)
+- Contact: JYfengswufe@163.com
