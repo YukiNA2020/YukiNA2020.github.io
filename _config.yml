@@ -1,3 +1,14 @@
 title: YukiNA2020's Homepage
-description: A place of peace and code under blue skies ❄️
+description: Blue Sky. Clean Code. Calm Mind.
 theme: jekyll-theme-cayman
+
+# 自定义样式
+sass:
+  style: compressed
+
+# 加载你的自定义样式文件
+defaults:
+  - scope:
+      path: ""
+    values:
+      stylesheet: /assets/css/style.scss
