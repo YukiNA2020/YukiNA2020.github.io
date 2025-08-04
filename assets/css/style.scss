@@ -1,0 +1,37 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+// 设置页面背景图（你也可以换成你喜欢的图片链接）
+body {
+  background: url('https://images.unsplash.com/photo-1608889175280-1f4f75d2c775?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+  background-size: cover;
+  color: #002244;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+// 设置导航栏透明
+.page-header {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #002244;
+}
+
+// 按钮颜色修改为冰蓝
+.btn {
+  background-color: #4da6ff;
+  color: white;
+  border-color: #3399ff;
+}
+
+.btn:hover {
+  background-color: #3399ff;
+  color: white;
+}
+
+// 主要内容框体半透明白底
+.main-content {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 2rem;
+  border-radius: 12px;
+}
