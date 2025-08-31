@@ -6,7 +6,7 @@
 
 #### 教育背景
 **香港中文大学 | The Chinese University of Hong Kong**<br>
-信息科技与技术 | Master of Information Science and Technology Management(2025.8 – 2026.7)<br>   
+信息科技与技术 | Master in Information Science and Technology Management(2025.8 – 2026.7)<br>   
 
 
 **伦敦政治经济学院|The London School of Economics and Political Science**, Summer School<br>
@@ -14,5 +14,5 @@
 
 **西南财经大学|Southwestern University of Finance and Economics**, 管理学学士 (2021.9 – 2025.6)  
 **特拉华大学|University of Delaware**, 理学学士 (2021.9 – 2025.6)<br> 
-• 特拉华数据科学学院双学位项目——GPA: 3.6/5.0 
+特拉华数据科学学院双学位项目——GPA: 3.6/5.0 
 
