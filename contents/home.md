@@ -9,7 +9,7 @@
 信息科技与技术 | Master in Information Science and Technology Management(2025.8 – 2026.7)<br>   
 
 
-**伦敦政治经济学院|The London School of Economics and Political Science**, Summer School<br>
+**伦敦政治经济学院 | The London School of Economics and Political Science**, Summer School(2023.7-2023.8)<br>
 专业：市场营销；成绩：A-
 
 **西南财经大学|Southwestern University of Finance and Economics**, 管理学学士 (2021.9 – 2025.6)  
