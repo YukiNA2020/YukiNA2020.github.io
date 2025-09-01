@@ -5,7 +5,7 @@ const content_dir = 'contents/'
 const config_file = 'config.yml'
 // 3. 需要加载的板块名称数组（决定了哪些.md文件会被加载）
 // 注意：原来的'awards'是旧板块，若要显示campus内容，需修改此处
-const section_names = ['home', 'campus', 'experience', 'publications'];
+const section_names = ['home', 'campus', 'experience', 'project'];
 
 
 // 当页面DOM结构加载完成后，执行以下逻辑
