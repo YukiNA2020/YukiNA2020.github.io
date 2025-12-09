@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>YukiNA | Personal Homepage</title>
+  <title>Yuki Na | Personal Homepage</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,31 +11,39 @@
   <header>
     <nav>
       <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#cv">CV</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home" data-en="Home" data-zh="首页">Home</a></li>
+        <li><a href="#research" data-en="Research" data-zh="研究">Research</a></li>
+        <li><a href="#cv" data-en="CV" data-zh="简历">CV</a></li>
+        <li><a href="#contact" data-en="Contact" data-zh="联系">Contact</a></li>
       </ul>
+
+      <!-- 🌐语言切换按钮 -->
+      <div class="lang-toggle" id="langToggle">中 / EN</div>
     </nav>
   </header>
 
   <!-- 主页头部 -->
   <section id="home" class="hero">
     <div class="overlay"></div>
-    <h1 class="name">Yuki Na</h1>
-    <p class="subtitle">Master Student @ CUHK • Data, Design & Innovation</p>
+    <h1 class="name" data-en="Yuki Na" data-zh="娜玉琪">Yuki Na</h1>
+    <p class="subtitle" 
+       data-en="Master Student @ CUHK • Data, Design & Innovation"
+       data-zh="香港中文大学硕士生｜数据 · 设计 · 创新">
+       Master Student @ CUHK • Data, Design & Innovation
+    </p>
   </section>
 
   <!-- 关于我 -->
   <section id="about" class="about">
     <div class="text">
-      <h2>About Me</h2>
-      <p>
-        Hi! I’m <b>Yuki Na</b>, a postgraduate student at CUHK, passionate about data-driven product design and technology innovation.  
-        My work explores the intersection between human-centered design and intelligent systems.  
+      <h2 data-en="About Me" data-zh="关于我">About Me</h2>
+      <p data-en="Hi! I’m Yuki Na, a postgraduate student at CUHK, passionate about data-driven product design and innovation."
+         data-zh="你好！我是娜玉琪，香港中文大学硕士生，对数据驱动的产品设计与创新充满热情。">
+         Hi! I’m Yuki Na, a postgraduate student at CUHK, passionate about data-driven product design and innovation.
       </p>
-      <p>
-        Previously, I studied Industrial Engineering and worked on several interdisciplinary research projects combining analytics, AI, and UX.
+      <p data-en="My work explores the intersection between human-centered design and intelligent systems."
+         data-zh="我的研究关注以人为本的设计与智能系统之间的交叉领域。">
+         My work explores the intersection between human-centered design and intelligent systems.
       </p>
     </div>
     <div class="photo">
@@ -43,29 +51,24 @@
     </div>
   </section>
 
-  <!-- 研究方向 -->
-  <section id="research" class="research">
-    <h2>Current Research</h2>
-    <ul>
-      <li><b>[1]</b> Exploring AI-driven content personalization in online communities</li>
-      <li><b>[2]</b> Visual storytelling and user engagement in digital platforms</li>
-      <li><b>[3]</b> Data ethics and algorithmic transparency</li>
-    </ul>
-  </section>
-
   <!-- 联系方式 -->
   <section id="contact" class="contact">
-    <h2>Contact</h2>
+    <h2 data-en="Contact" data-zh="联系我">Contact</h2>
     <ul>
-      <li>📧 Email: <a href="mailto:yuki@example.com">yuki@example.com</a></li>
-      <li>🏫 The Chinese University of Hong Kong</li>
-      <li>🔗 <a href="#">LinkedIn</a> | <a href="#">GitHub</a> | <a href="#">Twitter</a></li>
+      <li>📧 <span data-en="Email:" data-zh="邮箱：">Email:</span> <a href="mailto:yuki@example.com">yuki@example.com</a></li>
+      <li>🏫 <span data-en="The Chinese University of Hong Kong" data-zh="香港中文大学">The Chinese University of Hong Kong</span></li>
+      <li>🔗 <a href="#">LinkedIn</a> | <a href="#">GitHub</a></li>
     </ul>
   </section>
 
   <!-- 页脚 -->
   <footer>
-    <p>© 2025 Yuki Na | Built with ❤️ on GitHub Pages</p>
+    <p data-en="© 2025 Yuki Na | Built with ❤️ on GitHub Pages"
+       data-zh="© 2025 娜玉琪 | 基于 GitHub Pages 构建">
+       © 2025 Yuki Na | Built with ❤️ on GitHub Pages
+    </p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

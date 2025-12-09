@@ -125,3 +125,21 @@ footer {
   background: #6a4bc7;
   color: white;
 }
+/* 语言切换按钮 */
+.lang-toggle {
+  position: absolute;
+  right: 40px;
+  top: 12px;
+  cursor: pointer;
+  background: #6a4bc7;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 6px 14px;
+  border-radius: 20px;
+  transition: background 0.3s ease;
+}
+
+.lang-toggle:hover {
+  background: #4a35a0;
+}
