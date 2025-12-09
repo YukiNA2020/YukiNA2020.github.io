@@ -1,36 +1,63 @@
-body {
-    font-family: Arial, sans-serif;
+/* 让整个页面占满浏览器 */
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    font-family: "Microsoft YaHei", Arial, sans-serif;
 }
 
-header {
-    background-color: #4CAF50;
-    color: white;
+/* 渐变背景 + 居中布局 */
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 20px;
+    background: linear-gradient(135deg, #74ABE2, #5563DE);
+    color: white;
+    animation: fadeIn 1.5s ease-in;
 }
 
-h1 {
-    margin: 0;
+/* 中心文字样式 */
+.intro h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
 }
 
-#about, #projects {
-    padding: 20px;
-    margin: 20px;
+.intro .name {
+    color: #FFD369;
+}
+
+.subtitle {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.desc {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+/* 按钮样式 */
+.btn {
     background-color: white;
-    border-radius: 8px;
+    color: #5563DE;
+    padding: 12px 28px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+.btn:hover {
+    background-color: #FFD369;
+    color: #333;
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
+/* 淡入动画 */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
