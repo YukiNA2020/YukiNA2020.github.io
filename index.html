@@ -1,22 +1,71 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人主页 | 我的介绍</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YukiNA | Personal Homepage</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="home">
-        <div class="intro">
-            <h1>你好，我是 <span class="name">Your Name</span></h1>
-            <p class="subtitle">一名前端开发者 / 产品设计师 / 创意爱好者</p>
-            <p class="desc">
-                我热爱设计和代码，喜欢把想法变成现实。<br>
-                这里是我的个人主页，一个展示我和我作品的地方。
-            </p>
-            <a href="#about" class="btn">了解更多</a>
-        </div>
+  <!-- 导航栏 -->
+  <header>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 主页头部 -->
+  <section id="home" class="hero">
+    <div class="overlay"></div>
+    <h1 class="name">Yuki Na</h1>
+    <p class="subtitle">Master Student @ CUHK • Data, Design & Innovation</p>
+  </section>
+
+  <!-- 关于我 -->
+  <section id="about" class="about">
+    <div class="text">
+      <h2>About Me</h2>
+      <p>
+        Hi! I’m <b>Yuki Na</b>, a postgraduate student at CUHK, passionate about data-driven product design and technology innovation.  
+        My work explores the intersection between human-centered design and intelligent systems.  
+      </p>
+      <p>
+        Previously, I studied Industrial Engineering and worked on several interdisciplinary research projects combining analytics, AI, and UX.
+      </p>
     </div>
+    <div class="photo">
+      <img src="static/profile.jpg" alt="Profile Photo">
+    </div>
+  </section>
+
+  <!-- 研究方向 -->
+  <section id="research" class="research">
+    <h2>Current Research</h2>
+    <ul>
+      <li><b>[1]</b> Exploring AI-driven content personalization in online communities</li>
+      <li><b>[2]</b> Visual storytelling and user engagement in digital platforms</li>
+      <li><b>[3]</b> Data ethics and algorithmic transparency</li>
+    </ul>
+  </section>
+
+  <!-- 联系方式 -->
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <ul>
+      <li>📧 Email: <a href="mailto:yuki@example.com">yuki@example.com</a></li>
+      <li>🏫 The Chinese University of Hong Kong</li>
+      <li>🔗 <a href="#">LinkedIn</a> | <a href="#">GitHub</a> | <a href="#">Twitter</a></li>
+    </ul>
+  </section>
+
+  <!-- 页脚 -->
+  <footer>
+    <p>© 2025 Yuki Na | Built with ❤️ on GitHub Pages</p>
+  </footer>
 </body>
 </html>

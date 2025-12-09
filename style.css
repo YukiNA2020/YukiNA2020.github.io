@@ -1,63 +1,127 @@
-/* 让整个页面占满浏览器 */
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: "Microsoft YaHei", Arial, sans-serif;
+/* 通用样式 */
+body {
+  margin: 0;
+  font-family: "Open Sans", "Microsoft YaHei", sans-serif;
+  color: #333;
+  background-color: #fff;
+  line-height: 1.6;
 }
 
-/* 渐变背景 + 居中布局 */
-.home {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background: linear-gradient(135deg, #74ABE2, #5563DE);
-    color: white;
-    animation: fadeIn 1.5s ease-in;
+/* 导航栏 */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  z-index: 1000;
 }
 
-/* 中心文字样式 */
-.intro h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 15px;
+  gap: 30px;
 }
 
-.intro .name {
-    color: #FFD369;
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #6a4bc7;
+}
+
+/* Hero 头部 */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(120deg, #5a3fc0, #a27de0);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.name {
+  font-size: 4rem;
+  font-weight: bold;
+  z-index: 1;
 }
 
 .subtitle {
-    font-size: 22px;
-    margin-bottom: 20px;
+  z-index: 1;
+  font-size: 1.3rem;
+  margin-top: 10px;
 }
 
-.desc {
-    font-size: 18px;
-    line-height: 1.6;
-    max-width: 600px;
-    margin: 0 auto 30px;
+/* About */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 80px 10%;
+  background: #f9f9f9;
+  flex-wrap: wrap;
 }
 
-/* 按钮样式 */
-.btn {
-    background-color: white;
-    color: #5563DE;
-    padding: 12px 28px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease;
+.about .text {
+  flex: 1 1 400px;
+  padding-right: 20px;
 }
 
-.btn:hover {
-    background-color: #FFD369;
-    color: #333;
+.about .photo img {
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
-/* 淡入动画 */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+/* Research */
+.research {
+  padding: 60px 10%;
+}
+
+.research h2 {
+  color: #6a4bc7;
+}
+
+.research ul li {
+  margin: 10px 0;
+}
+
+/* Contact */
+.contact {
+  background: #f4f2ff;
+  padding: 60px 10%;
+}
+
+.contact a {
+  color: #6a4bc7;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #6a4bc7;
+  color: white;
 }
