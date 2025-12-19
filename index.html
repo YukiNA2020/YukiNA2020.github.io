@@ -1,74 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yuki Na | Personal Homepage</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-en="Jingyang Feng | Personal Page" data-zh="冯荆扬｜个人主页">冯荆扬｜个人主页</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <!-- 导航栏 -->
-  <header>
-    <nav>
+  <!-- Top Nav -->
+  <header class="topbar">
+    <nav class="nav">
+      <a class="logo" href="#home" aria-label="Home">F</a>
+
       <ul class="nav-links">
-        <li><a href="#home" data-en="Home" data-zh="首页">Home</a></li>
-        <li><a href="#research" data-en="Research" data-zh="研究">Research</a></li>
-        <li><a href="#cv" data-en="CV" data-zh="简历">CV</a></li>
-        <li><a href="#contact" data-en="Contact" data-zh="联系">Contact</a></li>
+        <li><a href="#home" data-en="Home" data-zh="首页">首页</a></li>
+        <li><a href="#journey" data-en="Journey" data-zh="经历">经历</a></li>
+        <li><a href="#projects" data-en="Projects" data-zh="项目">项目</a></li>
+        <li><a href="#life" data-en="Life" data-zh="生活">生活</a></li>
       </ul>
 
-      <!-- 🌐语言切换按钮 -->
-      <div class="lang-toggle" id="langToggle">中 / EN</div>
+      <button id="langToggle" class="lang-toggle" type="button" aria-label="Switch language">
+        EN / 中
+      </button>
     </nav>
   </header>
 
-  <!-- 主页头部 -->
-  <section id="home" class="hero">
-    <div class="overlay"></div>
-    <h1 class="name" data-en="JINGYANG FENG" data-zh="冯荆扬">JINGYANG FENG</h1>
-    <p class="subtitle" 
-       data-en="Master Student @ CUHK • SWUFE"
-       data-zh="香港中文大学硕士生｜西南财经大学本科生">
-       Master Student @ CUHK • SWUFE
-    </p>
-  </section>
+  <!-- Hero -->
+  <main id="home" class="hero">
+    <div class="hero-bg"></div>
 
-  <!-- 关于我 -->
-  <section id="about" class="about">
-    <div class="text">
-      <h2 data-en="About Me" data-zh="关于我">About Me</h2>
-      <p data-en="Hi! I’m Yuki Na, a postgraduate student at CUHK, passionate about data-driven product design and innovation."
-         data-zh="你好！我是娜玉琪，香港中文大学硕士生，对数据驱动的产品设计与创新充满热情。">
-         Hi! I’m Yuki Na, a postgraduate student at CUHK, passionate about data-driven product design and innovation.
-      </p>
-      <p data-en="My work explores the intersection between human-centered design and intelligent systems."
-         data-zh="我的研究关注以人为本的设计与智能系统之间的交叉领域。">
-         My work explores the intersection between human-centered design and intelligent systems.
+    <section class="hero-inner">
+      <!-- Left: Copy -->
+      <div class="hero-left">
+        <h1 class="hero-title">
+          <span class="hero-name-zh" data-en="Jingyang Feng" data-zh="冯荆扬">冯荆扬</span>
+          <span class="hero-name-en" data-en="Jingyang Feng" data-zh="Jingyang Feng">Jingyang Feng</span>
+        </h1>
+
+        <p class="hero-subtitle"
+           data-en="Focused on product thinking, design craft, and real-world problem solving."
+           data-zh="聚焦产品思维、设计能力与真实世界问题的解决。">
+          聚焦产品思维、设计能力与真实世界问题的解决。
+        </p>
+
+        <p class="hero-meta"
+           data-en="CUHK · Product / Design / Tech"
+           data-zh="CUHK · 产品 / 设计 / 技术">
+          CUHK · 产品 / 设计 / 技术
+        </p>
+
+        <a class="hero-cta" href="#journey">
+          <span data-en="Explore My Journey" data-zh="继续了解我的经历">继续了解我的经历</span>
+          <span class="arrow">↓</span>
+        </a>
+
+        <!-- Contact pill (in the first screen) -->
+        <div class="contact-pill" aria-label="Contact shortcuts">
+          <a class="pill-item" href="mailto:yuki@example.com" title="Email">
+            <!-- mail icon -->
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5L4 8V6l8 5 8-5v2z"/></svg>
+            <span class="pill-text">yuki@example.com</span>
+          </a>
+
+          <span class="pill-divider"></span>
+
+          <a class="pill-icon" href="#" title="LinkedIn" aria-label="LinkedIn">
+            <!-- linkedin icon -->
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.05-1.86-3.05-1.86 0-2.15 1.45-2.15 2.95v5.67H9.32V9h3.41v1.56h.05c.47-.9 1.63-1.86 3.36-1.86 3.6 0 4.26 2.37 4.26 5.45v6.3zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+          </a>
+
+          <a class="pill-icon" href="#" title="GitHub" aria-label="GitHub">
+            <!-- github icon -->
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5A12 12 0 0 0 0 12.8c0 5.42 3.44 10.02 8.2 11.64.6.12.82-.27.82-.6 0-.3-.01-1.08-.02-2.12-3.34.75-4.04-1.66-4.04-1.66-.54-1.42-1.33-1.8-1.33-1.8-1.09-.77.08-.76.08-.76 1.2.09 1.83 1.28 1.83 1.28 1.08 1.9 2.84 1.35 3.53 1.03.11-.8.42-1.35.76-1.66-2.66-.31-5.46-1.37-5.46-6.1 0-1.35.46-2.45 1.23-3.31-.12-.31-.54-1.57.12-3.27 0 0 1-.33 3.3 1.27a11.1 11.1 0 0 1 6 0c2.3-1.6 3.3-1.27 3.3-1.27.66 1.7.24 2.96.12 3.27.77.86 1.23 1.96 1.23 3.31 0 4.74-2.8 5.78-5.47 6.1.43.39.82 1.16.82 2.34 0 1.69-.02 3.05-.02 3.47 0 .33.22.72.83.6A12.25 12.25 0 0 0 24 12.8 12 12 0 0 0 12 .5z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Portrait (you can replace image later) -->
+      <div class="hero-right">
+        <div class="portrait-ring">
+          <img class="portrait" src="static/profile.jpg" alt="Profile photo" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Placeholder sections for later -->
+  <section id="journey" class="section">
+    <div class="section-inner">
+      <h2 data-en="Journey" data-zh="个人经历">个人经历</h2>
+      <p data-en="(Coming soon) A timeline of my key experiences and turning points."
+         data-zh="（待补充）这里将用时间线讲述关键经历与转折。">
+        （待补充）这里将用时间线讲述关键经历与转折。
       </p>
     </div>
-    <div class="photo">
-      <img src="static/profile.jpg" alt="Profile Photo">
+  </section>
+
+  <section id="projects" class="section alt">
+    <div class="section-inner">
+      <h2 data-en="Projects" data-zh="项目作品">项目作品</h2>
+      <p data-en="(Coming soon) Selected works and what I learned from them."
+         data-zh="（待补充）精选项目 + 我在项目中学到的东西。">
+        （待补充）精选项目 + 我在项目中学到的东西。
+      </p>
     </div>
   </section>
 
-  <!-- 联系方式 -->
-  <section id="contact" class="contact">
-    <h2 data-en="Contact" data-zh="联系我">Contact</h2>
-    <ul>
-      <li>📧 <span data-en="Email:" data-zh="邮箱：">Email:</span> <a href="mailto:yuki@example.com">yuki@example.com</a></li>
-      <li>🏫 <span data-en="The Chinese University of Hong Kong" data-zh="香港中文大学">The Chinese University of Hong Kong</span></li>
-      <li>🔗 <a href="#">LinkedIn</a> | <a href="#">GitHub</a></li>
-    </ul>
+  <section id="life" class="section">
+    <div class="section-inner">
+      <h2 data-en="Life" data-zh="兴趣与生活">兴趣与生活</h2>
+      <p data-en="(Coming soon) Hobbies, photos, and small stories."
+         data-zh="（待补充）兴趣爱好、照片与小故事。">
+        （待补充）兴趣爱好、照片与小故事。
+      </p>
+    </div>
   </section>
 
-  <!-- 页脚 -->
-  <footer>
-    <p data-en="© 2025 Yuki Na | Built with ❤️ on GitHub Pages"
-       data-zh="© 2025 娜玉琪 | 基于 GitHub Pages 构建">
-       © 2025 Yuki Na | Built with ❤️ on GitHub Pages
+  <footer class="footer">
+    <p data-en="© 2025 Jingyang Feng | Built on GitHub Pages"
+       data-zh="© 2025 冯荆扬｜基于 GitHub Pages 构建">
+      © 2025 冯荆扬｜基于 GitHub Pages 构建
     </p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>
