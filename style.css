@@ -202,3 +202,414 @@ footer {
   font-size: 13px;
   color: #6b7280;
 }
+
+/* =========================
+   Index Page Styles
+========================= */
+.index-page body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+               "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+  color: #111;
+  background: linear-gradient(120deg, #4b2fb8, #8e6cd8);
+  min-height: 100vh;
+}
+
+.index-page header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.index-page nav {
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.index-page .nav-links a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #222;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.index-page .lang-btn {
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: none;
+  background: #4b2fb8;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.index-page main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: 56px;
+  text-align: center;
+  color: #fff;
+}
+
+.index-page .hero {
+  max-width: 720px;
+  padding: 40px 20px;
+}
+
+.index-page .hero h1 {
+  font-size: 56px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.index-page .hero p {
+  font-size: 18px;
+  line-height: 1.6;
+  opacity: 0.95;
+  margin-bottom: 10px;
+}
+
+.index-page .contact {
+  margin-top: 24px;
+  font-size: 15px;
+}
+
+.index-page .contact a {
+  color: #fff;
+  text-decoration: underline;
+  margin: 0 6px;
+}
+
+@media (max-width: 600px) {
+  .index-page .hero h1 {
+    font-size: 40px;
+  }
+}
+
+/* =========================
+   Journey Page Styles
+========================= */
+.journey-page body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+               "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+  background: #f6f5fb;
+  color: #111;
+  min-height: 100vh;
+}
+
+.journey-page header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.journey-page nav {
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.journey-page .nav-links a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #222;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.journey-page .lang-btn {
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: none;
+  background: #4b2fb8;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.journey-page main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 100px 20px 80px;
+}
+
+.journey-page h1 {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.journey-page .subtitle {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.journey-page .timeline {
+  position: relative;
+  padding-left: 24px;
+  border-left: 3px solid #4b2fb8;
+}
+
+.journey-page .entry {
+  margin-bottom: 36px;
+}
+
+.journey-page .entry:last-child {
+  margin-bottom: 0;
+}
+
+.journey-page .entry h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.journey-page .entry .time {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 8px;
+}
+
+.journey-page .entry p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #333;
+}
+
+.journey-page footer {
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 14px;
+  color: #777;
+}
+
+/* =========================
+   Projects Page Styles
+========================= */
+.projects-page body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+               "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+  background: #f6f5fb;
+  color: #111;
+  min-height: 100vh;
+}
+
+.projects-page header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.projects-page nav {
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.projects-page .nav-links a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #222;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.projects-page .lang-btn {
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: none;
+  background: #4b2fb8;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.projects-page main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 100px 20px 80px;
+}
+
+.projects-page h1 {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.projects-page .subtitle {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.projects-page .projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.projects-page .project-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  border: 1px solid #e5e5e5;
+}
+
+.projects-page .project-card h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.projects-page .project-meta {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 12px;
+}
+
+.projects-page .project-card p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #333;
+}
+
+.projects-page footer {
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 14px;
+  color: #777;
+}
+
+/* =========================
+   Life Page Styles
+========================= */
+.life-page body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+               "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+  background: #f6f5fb;
+  color: #111;
+  min-height: 100vh;
+}
+
+.life-page header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.life-page nav {
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.life-page .nav-links a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #222;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.life-page .lang-btn {
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: none;
+  background: #4b2fb8;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.life-page main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 100px 20px 80px;
+}
+
+.life-page h1 {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.life-page .subtitle {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.life-page .life-section {
+  margin-bottom: 48px;
+}
+
+.life-page .life-section h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.life-page .life-section p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #333;
+  max-width: 720px;
+}
+
+.life-page footer {
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 14px;
+  color: #777;
+}

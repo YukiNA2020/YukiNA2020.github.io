@@ -5,114 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>冯荆扬 | Personal Homepage</title>
 
-  <style>
-    /* ===== Reset ===== */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-                   "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
-      color: #111;
-      background: linear-gradient(120deg, #4b2fb8, #8e6cd8);
-      min-height: 100vh;
-    }
-
-    /* ===== Top Navigation ===== */
-    header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 56px;
-      background: rgba(255, 255, 255, 0.85);
-      backdrop-filter: blur(8px);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 10;
-    }
-
-    nav {
-      width: 100%;
-      max-width: 1000px;
-      padding: 0 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .nav-links a {
-      margin: 0 12px;
-      text-decoration: none;
-      color: #222;
-      font-weight: 600;
-      font-size: 14px;
-    }
-
-    .lang-btn {
-      padding: 6px 12px;
-      border-radius: 999px;
-      border: none;
-      background: #4b2fb8;
-      color: #fff;
-      font-weight: 600;
-      cursor: pointer;
-    }
-
-    /* ===== Hero ===== */
-    main {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      padding-top: 56px;
-      text-align: center;
-      color: #fff;
-    }
-
-    .hero {
-      max-width: 720px;
-      padding: 40px 20px;
-    }
-
-    .hero h1 {
-      font-size: 56px;
-      font-weight: 800;
-      margin-bottom: 12px;
-    }
-
-    .hero p {
-      font-size: 18px;
-      line-height: 1.6;
-      opacity: 0.95;
-      margin-bottom: 10px;
-    }
-
-    .contact {
-      margin-top: 24px;
-      font-size: 15px;
-    }
-
-    .contact a {
-      color: #fff;
-      text-decoration: underline;
-      margin: 0 6px;
-    }
-
-    /* ===== Responsive ===== */
-    @media (max-width: 600px) {
-      .hero h1 {
-        font-size: 40px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <script src="scripts.js"></script>
 </head>
 
-<body>
+<body class="index-page">
 
   <!-- Navigation -->
   <header>
@@ -157,27 +54,6 @@
       </div>
     </div>
   </main>
-
-  <script>
-    const toggle = document.getElementById("langToggle");
-    let currentLang = localStorage.getItem("lang") || "zh";
-
-    function applyLang(lang) {
-      document.querySelectorAll("[data-en]").forEach(el => {
-        el.textContent = el.getAttribute(lang === "en" ? "data-en" : "data-zh");
-      });
-      toggle.textContent = lang === "en" ? "中 / EN" : "EN / 中";
-      document.documentElement.lang = lang === "en" ? "en" : "zh-CN";
-      localStorage.setItem("lang", lang);
-    }
-
-    toggle.addEventListener("click", () => {
-      currentLang = currentLang === "en" ? "zh" : "en";
-      applyLang(currentLang);
-    });
-
-    applyLang(currentLang);
-  </script>
 
 </body>
 </html>
