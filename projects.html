@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | 冯荆扬</title>
+
+  <style>
+    /* ===== Reset ===== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+      background: #f6f5fb;
+      color: #111;
+      min-height: 100vh;
+    }
+
+    /* ===== Top Navigation ===== */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 56px;
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(8px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+      border-bottom: 1px solid #e6e6e6;
+    }
+
+    nav {
+      width: 100%;
+      max-width: 1000px;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-links a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #222;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .lang-btn {
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: none;
+      background: #4b2fb8;
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    /* ===== Page Layout ===== */
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 100px 20px 80px;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 40px;
+    }
+
+    /* ===== Projects ===== */
+    .projects {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    .project-card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 24px;
+      border: 1px solid #e5e5e5;
+    }
+
+    .project-card h2 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .project-meta {
+      font-size: 14px;
+      color: #777;
+      margin-bottom: 12px;
+    }
+
+    .project-card p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #333;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <div class="nav-links">
+        <a href="index.html" data-en="Home" data-zh="首页">首页</a>
+        <a href="journey.html" data-en="Journey" data-zh="经历">经历</a>
+        <a href="projects.html" data-en="Projects" data-zh="项目">项目</a>
+        <a href="life.html" data-en="Life" data-zh="生活">生活</a>
+      </div>
+
+      <button class="lang-btn" id="langToggle">EN / 中</button>
+    </nav>
+  </header>
+
+  <!-- Content -->
+  <main>
+    <h1 data-en="Projects" data-zh="项目与作品">项目与作品</h1>
+    <p class="subtitle"
+       data-en="Selected projects that reflect my interests, skills, and thinking."
+       data-zh="一些能体现我兴趣、能力与思考方式的项目。">
+      一些能体现我兴趣、能力与思考方式的项目。
+    </p>
+
+    <div class="projects">
+
+      <!-- Project 1 -->
+      <div class="project-card">
+        <h2 data-en="Project Title One" data-zh="项目一名称">项目一名称</h2>
+        <div class="project-meta"
+             data-en="Role · Year"
+             data-zh="角色 · 年份">
+          角色 · 年份
+        </div>
+        <p data-en="(To be filled) Brief description of the project, your role, and key takeaways."
+           data-zh="（待填写）项目简介、你在其中的角色，以及最重要的收获。">
+          （待填写）项目简介、你在其中的角色，以及最重要的收获。
+        </p>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <h2 data-en="Project Title Two" data-zh="项目二名称">项目二名称</h2>
+        <div class="project-meta"
+             data-en="Role · Year"
+             data-zh="角色 · 年份">
+          角色 · 年份
+        </div>
+        <p data-en="(To be filled) What problem you tried to solve and what you learned."
+           data-zh="（待填写）你试图解决的问题，以及从中学到的东西。">
+          （待填写）你试图解决的问题，以及从中学到的东西。
+        </p>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <h2 data-en="Project Title Three" data-zh="项目三名称">项目三名称</h2>
+        <div class="project-meta"
+             data-en="Role · Year"
+             data-zh="角色 · 年份">
+          角色 · 年份
+        </div>
+        <p data-en="(To be filled) A short reflection on this project."
+           data-zh="（待填写）关于这个项目的一点反思或总结。">
+          （待填写）关于这个项目的一点反思或总结。
+        </p>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    © 2025 冯荆扬
+  </footer>
+
+  <script>
+    const toggle = document.getElementById("langToggle");
+    let currentLang = localStorage.getItem("lang") || "zh";
+
+    function applyLang(lang) {
+      document.querySelectorAll("[data-en]").forEach(el => {
+        el.textContent = el.getAttribute(lang === "en" ? "data-en" : "data-zh");
+      });
+      toggle.textContent = lang === "en" ? "中 / EN" : "EN / 中";
+      document.documentElement.lang = lang === "en" ? "en" : "zh-CN";
+      localStorage.setItem("lang", lang);
+    }
+
+    toggle.addEventListener("click", () => {
+      currentLang = currentLang === "en" ? "zh" : "en";
+      applyLang(currentLang);
+    });
+
+    applyLang(currentLang);
+  </script>
+
+</body>
+</html>
