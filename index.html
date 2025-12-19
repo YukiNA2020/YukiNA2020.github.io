@@ -3,127 +3,179 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title data-en="Jingyang Feng | Personal Page" data-zh="冯荆扬｜个人主页">冯荆扬｜个人主页</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>冯荆扬 | Personal Homepage</title>
+
+  <style>
+    /* ===== Reset ===== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+      color: #111;
+      background: linear-gradient(120deg, #4b2fb8, #8e6cd8);
+      min-height: 100vh;
+    }
+
+    /* ===== Top Navigation ===== */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 56px;
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(8px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+    }
+
+    nav {
+      width: 100%;
+      max-width: 1000px;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-links a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #222;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .lang-btn {
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: none;
+      background: #4b2fb8;
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    /* ===== Hero ===== */
+    main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding-top: 56px;
+      text-align: center;
+      color: #fff;
+    }
+
+    .hero {
+      max-width: 720px;
+      padding: 40px 20px;
+    }
+
+    .hero h1 {
+      font-size: 56px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      line-height: 1.6;
+      opacity: 0.95;
+      margin-bottom: 10px;
+    }
+
+    .contact {
+      margin-top: 24px;
+      font-size: 15px;
+    }
+
+    .contact a {
+      color: #fff;
+      text-decoration: underline;
+      margin: 0 6px;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 40px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <!-- Top Nav -->
-  <header class="topbar">
-    <nav class="nav">
-      <a class="logo" href="#home" aria-label="Home">F</a>
 
-      <ul class="nav-links">
-        <li><a href="#home" data-en="Home" data-zh="首页">首页</a></li>
-        <li><a href="#journey" data-en="Journey" data-zh="经历">经历</a></li>
-        <li><a href="#projects" data-en="Projects" data-zh="项目">项目</a></li>
-        <li><a href="#life" data-en="Life" data-zh="生活">生活</a></li>
-      </ul>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <div class="nav-links">
+        <a href="index.html" data-en="Home" data-zh="首页">首页</a>
+        <a href="journey.html" data-en="Journey" data-zh="经历">经历</a>
+        <a href="projects.html" data-en="Projects" data-zh="项目">项目</a>
+        <a href="life.html" data-en="Life" data-zh="生活">生活</a>
+      </div>
 
-      <button id="langToggle" class="lang-toggle" type="button" aria-label="Switch language">
-        EN / 中
-      </button>
+      <button class="lang-btn" id="langToggle">EN / 中</button>
     </nav>
   </header>
 
   <!-- Hero -->
-  <main id="home" class="hero">
-    <div class="hero-bg"></div>
+  <main>
+    <div class="hero">
+      <h1 data-en="Jingyang Feng" data-zh="冯荆扬">冯荆扬</h1>
 
-    <section class="hero-inner">
-      <!-- Left: Copy -->
-      <div class="hero-left">
-        <h1 class="hero-title">
-          <span class="hero-name-zh" data-en="Jingyang Feng" data-zh="冯荆扬">冯荆扬</span>
-          <span class="hero-name-en" data-en="Jingyang Feng" data-zh="Jingyang Feng">Jingyang Feng</span>
-        </h1>
+      <p
+        data-en="Master student at CUHK, interested in product thinking, design, and real-world problem solving."
+        data-zh="香港中文大学硕士生，关注产品思维、设计与真实世界问题的解决。">
+        香港中文大学硕士生，关注产品思维、设计与真实世界问题的解决。
+      </p>
 
-        <p class="hero-subtitle"
-           data-en="Focused on product thinking, design craft, and real-world problem solving."
-           data-zh="聚焦产品思维、设计能力与真实世界问题的解决。">
-          聚焦产品思维、设计能力与真实世界问题的解决。
-        </p>
+      <p
+        data-en="Exploring how ideas turn into meaningful experiences."
+        data-zh="探索想法如何转化为有意义的体验。">
+        探索想法如何转化为有意义的体验。
+      </p>
 
-        <p class="hero-meta"
-           data-en="CUHK · Product / Design / Tech"
-           data-zh="CUHK · 产品 / 设计 / 技术">
-          CUHK · 产品 / 设计 / 技术
-        </p>
-
-        <a class="hero-cta" href="#journey">
-          <span data-en="Explore My Journey" data-zh="继续了解我的经历">继续了解我的经历</span>
-          <span class="arrow">↓</span>
-        </a>
-
-        <!-- Contact pill (in the first screen) -->
-        <div class="contact-pill" aria-label="Contact shortcuts">
-          <a class="pill-item" href="mailto:yuki@example.com" title="Email">
-            <!-- mail icon -->
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5L4 8V6l8 5 8-5v2z"/></svg>
-            <span class="pill-text">yuki@example.com</span>
-          </a>
-
-          <span class="pill-divider"></span>
-
-          <a class="pill-icon" href="#" title="LinkedIn" aria-label="LinkedIn">
-            <!-- linkedin icon -->
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.05-1.86-3.05-1.86 0-2.15 1.45-2.15 2.95v5.67H9.32V9h3.41v1.56h.05c.47-.9 1.63-1.86 3.36-1.86 3.6 0 4.26 2.37 4.26 5.45v6.3zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
-          </a>
-
-          <a class="pill-icon" href="#" title="GitHub" aria-label="GitHub">
-            <!-- github icon -->
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5A12 12 0 0 0 0 12.8c0 5.42 3.44 10.02 8.2 11.64.6.12.82-.27.82-.6 0-.3-.01-1.08-.02-2.12-3.34.75-4.04-1.66-4.04-1.66-.54-1.42-1.33-1.8-1.33-1.8-1.09-.77.08-.76.08-.76 1.2.09 1.83 1.28 1.83 1.28 1.08 1.9 2.84 1.35 3.53 1.03.11-.8.42-1.35.76-1.66-2.66-.31-5.46-1.37-5.46-6.1 0-1.35.46-2.45 1.23-3.31-.12-.31-.54-1.57.12-3.27 0 0 1-.33 3.3 1.27a11.1 11.1 0 0 1 6 0c2.3-1.6 3.3-1.27 3.3-1.27.66 1.7.24 2.96.12 3.27.77.86 1.23 1.96 1.23 3.31 0 4.74-2.8 5.78-5.47 6.1.43.39.82 1.16.82 2.34 0 1.69-.02 3.05-.02 3.47 0 .33.22.72.83.6A12.25 12.25 0 0 0 24 12.8 12 12 0 0 0 12 .5z"/></svg>
-          </a>
-        </div>
+      <div class="contact">
+        <span data-en="Contact:" data-zh="联系：">联系：</span>
+        <a href="mailto:yuki@example.com">yuki@example.com</a>
+        |
+        <a href="#">GitHub</a>
+        |
+        <a href="#">LinkedIn</a>
       </div>
-
-      <!-- Right: Portrait (you can replace image later) -->
-      <div class="hero-right">
-        <div class="portrait-ring">
-          <img class="portrait" src="static/profile.jpg" alt="Profile photo" />
-        </div>
-      </div>
-    </section>
+    </div>
   </main>
 
-  <!-- Placeholder sections for later -->
-  <section id="journey" class="section">
-    <div class="section-inner">
-      <h2 data-en="Journey" data-zh="个人经历">个人经历</h2>
-      <p data-en="(Coming soon) A timeline of my key experiences and turning points."
-         data-zh="（待补充）这里将用时间线讲述关键经历与转折。">
-        （待补充）这里将用时间线讲述关键经历与转折。
-      </p>
-    </div>
-  </section>
+  <script>
+    const toggle = document.getElementById("langToggle");
+    let currentLang = localStorage.getItem("lang") || "zh";
 
-  <section id="projects" class="section alt">
-    <div class="section-inner">
-      <h2 data-en="Projects" data-zh="项目作品">项目作品</h2>
-      <p data-en="(Coming soon) Selected works and what I learned from them."
-         data-zh="（待补充）精选项目 + 我在项目中学到的东西。">
-        （待补充）精选项目 + 我在项目中学到的东西。
-      </p>
-    </div>
-  </section>
+    function applyLang(lang) {
+      document.querySelectorAll("[data-en]").forEach(el => {
+        el.textContent = el.getAttribute(lang === "en" ? "data-en" : "data-zh");
+      });
+      toggle.textContent = lang === "en" ? "中 / EN" : "EN / 中";
+      document.documentElement.lang = lang === "en" ? "en" : "zh-CN";
+      localStorage.setItem("lang", lang);
+    }
 
-  <section id="life" class="section">
-    <div class="section-inner">
-      <h2 data-en="Life" data-zh="兴趣与生活">兴趣与生活</h2>
-      <p data-en="(Coming soon) Hobbies, photos, and small stories."
-         data-zh="（待补充）兴趣爱好、照片与小故事。">
-        （待补充）兴趣爱好、照片与小故事。
-      </p>
-    </div>
-  </section>
+    toggle.addEventListener("click", () => {
+      currentLang = currentLang === "en" ? "zh" : "en";
+      applyLang(currentLang);
+    });
 
-  <footer class="footer">
-    <p data-en="© 2025 Jingyang Feng | Built on GitHub Pages"
-       data-zh="© 2025 冯荆扬｜基于 GitHub Pages 构建">
-      © 2025 冯荆扬｜基于 GitHub Pages 构建
-    </p>
-  </footer>
+    applyLang(currentLang);
+  </script>
 
-  <script src="scripts.js"></script>
 </body>
 </html>
