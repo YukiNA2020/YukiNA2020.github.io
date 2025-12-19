@@ -78,11 +78,6 @@ header {
 ========================= */
 .hero {
   min-height: calc(100vh - 64px);
-  background: linear-gradient(
-    135deg,
-    var(--purple-dark),
-    var(--purple-light)
-  );
   display: flex;
   align-items: center;
   justify-content: center;
