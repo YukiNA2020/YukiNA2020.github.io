@@ -86,12 +86,7 @@ nav {
 ===================================================== */
 body.index-page {
   min-height: 100vh;
-   background: 
-    linear-gradient(
-      rgba(75, 47, 184, 0.55),
-      rgba(142, 108, 216, 0.55)
-    ),
-    url("assets/background.jpg");
+   background: url("assets/background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
