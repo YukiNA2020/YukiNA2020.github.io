@@ -1,4 +1,5 @@
 import React, {useContext} from "react";
+import { useTranslation } from "react-i18next";
 import "./Skills.scss";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
 import {illustration, skillsSection} from "../../portfolio";
@@ -9,6 +10,8 @@ import StyleContext from "../../contexts/StyleContext";
 
 export default function Skills() {
   const {isDark} = useContext(StyleContext);
+  const { t } = useTranslation();
+
   if (!skillsSection.display) {
     return null;
   }
@@ -32,7 +35,7 @@ export default function Skills() {
             <h1
               className={isDark ? "dark-mode skills-heading" : "skills-heading"}
             >
-              {skillsSection.title}{" "}
+              {t("skills.title")}
             </h1>
             <p
               className={
@@ -41,7 +44,7 @@ export default function Skills() {
                   : "subTitle skills-text-subtitle"
               }
             >
-              {skillsSection.subTitle}
+              {t("skills.subtitle")}
             </p>
             <SoftwareSkill />
             <div>

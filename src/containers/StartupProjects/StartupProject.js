@@ -1,4 +1,5 @@
 import React, {useContext} from "react";
+import { useTranslation } from "react-i18next";
 import "./StartupProjects.scss";
 import {bigProjects} from "../../portfolio";
 import {Fade} from "react-reveal";
@@ -14,6 +15,8 @@ export default function StartupProject() {
   }
 
   const {isDark} = useContext(StyleContext);
+  const { t } = useTranslation();
+
   if (!bigProjects.display) {
     return null;
   }
@@ -21,7 +24,7 @@ export default function StartupProject() {
     <Fade bottom duration={1000} distance="20px">
       <div className="main" id="projects">
         <div>
-          <h1 className="skills-heading">{bigProjects.title}</h1>
+          <h1 className="skills-heading">{t("projects.title")}</h1>
           <p
             className={
               isDark
@@ -29,7 +32,7 @@ export default function StartupProject() {
                 : "subTitle project-subtitle"
             }
           >
-            {bigProjects.subtitle}
+            {t("projects.subtitle")}
           </p>
 
           <div className="projects-container">
