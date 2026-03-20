@@ -1,0 +1,61 @@
+{
+  "greeting": {
+    "username": "Jingyang Feng (Edmond)",
+    "title": "Hi all, I'm Jingyang Feng",
+    "subtitle": "A passionate learner and thinker 🚀 from China. I love meeting different people and exploring diverse cultures. I hope to gain more different experiences in this limited life.",
+    "resumeLinkText": "Get Resume"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "education": "Education",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "achievements": "Achievements",
+    "contact": "Contact"
+  },
+  "skills": {
+    "title": "What I do",
+    "subtitle": "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+    "skill1": "Develop highly interactive Front end / User Interfaces for your web and mobile applications",
+    "skill2": "Progressive Web Applications ( PWA ) in normal and SPA Stacks",
+    "skill3": "Integration of third party services such as Firebase/ AWS / Digital Ocean"
+  },
+  "education": {
+    "title": "Education",
+    "subtitle": "My education journey"
+  },
+  "workExperience": {
+    "title": "Work Experience",
+    "subtitle": "My professional journey"
+  },
+  "projects": {
+    "title": "Big Projects",
+    "subtitle": "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+    "visitWebsite": "Visit Website",
+    "viewCode": "View Code"
+  },
+  "achievements": {
+    "title": "Achievements And Certifications",
+    "subtitle": "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "certification": "Certification",
+    "awardLetter": "Award Letter"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Feel free to reach out to me!",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "sendMessage": "Send Message"
+  },
+  "footer": {
+    "madeWith": "Made with",
+    "by": "by",
+    "design": "Designed and Developed by"
+  },
+  "language": {
+    "switch": "中文 / EN"
+  }
+}

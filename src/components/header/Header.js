@@ -3,6 +3,7 @@ import Headroom from "react-headroom";
 import "./Header.scss";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 import StyleContext from "../../contexts/StyleContext";
+import LanguageToggle from "../languageToggle/LanguageToggle";
 import {
   greeting,
   workExperiences,
@@ -80,14 +81,15 @@ function Header() {
             <a href="#contact">Contact Me</a>
           </li>
           <li>
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a>
-              <ToggleSwitch />
-            </a>
+            <ToggleSwitch />
+          </li>
+          <li>
+            <LanguageToggle />
           </li>
         </ul>
       </header>
     </Headroom>
   );
 }
+
 export default Header;

@@ -1,0 +1,61 @@
+{
+  "greeting": {
+    "username": "冯荆扬（Edmond）",
+    "title": "大家好，我是冯荆扬",
+    "subtitle": "我来自中国，是一个热爱学习和思考的人 🚀。我喜欢结识不同的人，探索多元文化。希望在有限的生命中获得更多不同的体验。",
+    "resumeLinkText": "获取简历"
+  },
+  "nav": {
+    "home": "首页",
+    "about": "关于",
+    "education": "教育经历",
+    "skills": "技能",
+    "experience": "工作经历",
+    "projects": "项目",
+    "achievements": "成就",
+    "contact": "联系"
+  },
+  "skills": {
+    "title": "技能专长",
+    "subtitle": "热爱探索各种技术栈的全栈开发者",
+    "skill1": "为Web和移动应用开发高度交互的前端界面和用户体验",
+    "skill2": "开发渐进式Web应用（PWA），支持普通栈和单页应用栈",
+    "skill3": "集成第三方服务，如Firebase/AWS/Digital Ocean"
+  },
+  "education": {
+    "title": "教育经历",
+    "subtitle": "我的求学之路"
+  },
+  "workExperience": {
+    "title": "工作经历",
+    "subtitle": "我的职业发展"
+  },
+  "projects": {
+    "title": "重要项目",
+    "subtitle": "我帮助创建的初创公司和项目",
+    "visitWebsite": "访问网站",
+    "viewCode": "查看代码"
+  },
+  "achievements": {
+    "title": "成就与证书",
+    "subtitle": "我的成就、证书、获奖信以及其他一些很酷的事情！",
+    "certification": "证书",
+    "awardLetter": "获奖信"
+  },
+  "contact": {
+    "title": "联系方式",
+    "subtitle": "欢迎随时联系我！",
+    "email": "邮箱",
+    "phone": "电话",
+    "address": "地址",
+    "sendMessage": "发送消息"
+  },
+  "footer": {
+    "madeWith": "用",
+    "by": "制作",
+    "design": "设计与开发"
+  },
+  "language": {
+    "switch": "中文 / EN"
+  }
+}
