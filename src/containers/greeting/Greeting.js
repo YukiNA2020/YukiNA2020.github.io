@@ -1,7 +1,6 @@
 import React, {useContext} from "react";
 import {Fade} from "react-reveal";
 import emoji from "react-easy-emoji";
-import { useTranslation } from "react-i18next";
 import "./Greeting.scss";
 import landingPerson from "../../assets/lottie/landingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
@@ -12,8 +11,6 @@ import StyleContext from "../../contexts/StyleContext";
 
 export default function Greeting() {
   const {isDark} = useContext(StyleContext);
-  const { t } = useTranslation();
-
   if (!greeting.displayGreeting) {
     return null;
   }
@@ -23,33 +20,29 @@ export default function Greeting() {
         <div className="greeting-main">
           <div className="greeting-text-div">
             <div>
-              <h1
-                className={isDark ? "dark-mode greeting-text" : "greeting-text"}
-              >
-                {" "}
-                {t("greeting.title")}{" "}
+              
+              import { useTranslation } from "react-i18next";
+             // 在组件内添加
+              const { t } = useTranslation();
+              <h1 className={isDark ? "dark-mode greeting-text" : "greeting-text"}>
+                {t("greeting.title")}
                 <span className="wave-emoji">{emoji("👋")}</span>
-              </h1>
-              <p
-                className={
-                  isDark
-                    ? "dark-mode greeting-text-p"
-                    : "greeting-text-p subTitle"
-                }
-              >
-                {t("greeting.subtitle")}
-              </p>
+             </h1>
+             <p className={isDark ? "dark-mode greeting-text-p" : "greeting-text-p subTitle"}>
+              {t("greeting.subtitle")}
+            </p>
+
               <div id="resume" className="empty-div"></div>
               <SocialMedia />
               <div className="button-greeting-div">
-                <Button text={t("buttons.contact")} href="#contact" />
+                <Button text="Contact me" href="#contact" />
                 {greeting.resumeLink && (
                   <a
                     href={require("./resume.pdf")}
                     download="Resume.pdf"
                     className="download-link-button"
                   >
-                    <Button text={t("buttons.resume")} />
+                    <Button text="Download my resume" />
                   </a>
                 )}
               </div>
