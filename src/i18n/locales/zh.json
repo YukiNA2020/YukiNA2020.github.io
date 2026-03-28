@@ -7,9 +7,7 @@
     "home": "首页",
     "skills": "技能",
     "experience": "经历",
-    "opensource": "开源",
     "projects": "项目",
-    "achievements": "成就",
     "blogs": "博客",
     "talks": "演讲",
     "resume": "简历",
@@ -37,12 +35,6 @@
     "title": "重要项目",
     "subtitle": "我帮助创建的初创公司和项目",
     "visitWebsite": "访问网站"
-  },
-  "achievements": {
-    "title": "成就与证书",
-    "subtitle": "我的成就、证书、获奖信以及其他一些很酷的事情！",
-    "certification": "证书",
-    "awardLetter": "获奖信"
   },
   "contact": {
     "title": "联系我",

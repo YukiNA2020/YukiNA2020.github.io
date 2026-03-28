@@ -7,9 +7,7 @@
     "home": "Home",
     "skills": "Skills",
     "experience": "Experience",
-    "opensource": "Open Source",
     "projects": "Projects",
-    "achievements": "Achievements",
     "blogs": "Blogs",
     "talks": "Talks",
     "resume": "Resume",
@@ -37,12 +35,6 @@
     "title": "Big Projects",
     "subtitle": "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
     "visitWebsite": "Visit Website"
-  },
-  "achievements": {
-    "title": "Achievements And Certifications",
-    "subtitle": "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
-    "certification": "Certification",
-    "awardLetter": "Award Letter"
   },
   "contact": {
     "title": "Contact Me",
