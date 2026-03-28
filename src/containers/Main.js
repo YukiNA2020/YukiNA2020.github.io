@@ -3,6 +3,7 @@ import Header from "../components/header/Header";
 import Greeting from "./greeting/Greeting";
 import Skills from "./skills/Skills";
 import WorkExperience from "./workExperience/WorkExperience";
+import Portfolio from "./portfolio/Portfolio";
 import Blogs from "./blogs/Blogs";
 import Footer from "../components/footer/Footer";
 import Talks from "./talks/Talks";
@@ -53,6 +54,7 @@ const Main = () => {
             <Skills />
             <Education />
             <WorkExperience />
+            <Portfolio />
             <Blogs />
             <Talks />
             <TravelPhotos />

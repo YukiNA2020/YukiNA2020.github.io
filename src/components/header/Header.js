@@ -78,6 +78,9 @@ function Header() {
                     <a href="#experience">{t("nav.workExp")}</a>
                   </li>
                 )}
+                <li>
+                  <a href="#portfolio">{t("nav.portfolio")}</a>
+                </li>
               </ul>
             </li>
           )}
