@@ -162,6 +162,8 @@
 @media (min-width: 48em) {
   .header li {
     float: left;
+    display: flex;
+    align-items: center;
   }
   .header {
     display: flex;
@@ -170,6 +172,8 @@
   }
   .header .menu {
     max-height: none;
+    display: flex;
+    align-items: center;
   }
   .header .menu-icon {
     display: none;
