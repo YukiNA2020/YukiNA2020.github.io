@@ -47,7 +47,7 @@ function Header() {
           )}
           {(viewExperience || viewEducation) && (
             <li className="dropdown">
-              <a>{t("nav.experience")}</a>
+              <a href="#experience">{t("nav.experience")}</a>
               <ul className="dropdown-menu">
                 {viewEducation && (
                   <li>
