@@ -6,6 +6,9 @@
   "nav": {
     "home": "首页",
     "skills": "技能",
+    "about": "关于",
+    "introduction": "个人简介",
+    "whatICanDo": "技能专长",
     "experience": "经历",
     "educationExp": "教育经历",
     "workExp": "工作经历",

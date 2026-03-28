@@ -6,6 +6,9 @@
   "nav": {
     "home": "Home",
     "skills": "Skills",
+    "about": "About",
+    "introduction": "Introduction",
+    "whatICanDo": "What I can do",
     "experience": "Experience",
     "educationExp": "Education Experience",
     "workExp": "Work Experience",

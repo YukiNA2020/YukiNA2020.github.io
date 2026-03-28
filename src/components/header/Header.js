@@ -22,7 +22,8 @@ function Header() {
   const viewSkills = skillsSection.display;
   const viewBlog = blogSection.display;
   const viewTalks = talkSection.display;
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [experienceOpen, setExperienceOpen] = useState(false);
+  const [aboutOpen, setAboutOpen] = useState(false);
 
   return (
     <Headroom>
@@ -42,16 +43,29 @@ function Header() {
         </label>
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           {viewSkills && (
-            <li>
-              <a href="#skills">{t("nav.skills")}</a>
+            <li
+              className={"dropdown" + (aboutOpen ? " dropdown-open" : "")}
+              onMouseEnter={() => setAboutOpen(true)}
+              onMouseLeave={() => setAboutOpen(false)}
+              onClick={() => setAboutOpen(!aboutOpen)}
+            >
+              <a href="#introduction">{t("nav.about")}</a>
+              <ul className="dropdown-menu">
+                <li>
+                  <a href="#introduction">{t("nav.introduction")}</a>
+                </li>
+                <li>
+                  <a href="#skills">{t("nav.whatICanDo")}</a>
+                </li>
+              </ul>
             </li>
           )}
           {(viewExperience || viewEducation) && (
             <li
-              className={"dropdown" + (dropdownOpen ? " dropdown-open" : "")}
-              onMouseEnter={() => setDropdownOpen(true)}
-              onMouseLeave={() => setDropdownOpen(false)}
-              onClick={() => setDropdownOpen(!dropdownOpen)}
+              className={"dropdown" + (experienceOpen ? " dropdown-open" : "")}
+              onMouseEnter={() => setExperienceOpen(true)}
+              onMouseLeave={() => setExperienceOpen(false)}
+              onClick={() => setExperienceOpen(!experienceOpen)}
             >
               <a href="#experience">{t("nav.experience")}</a>
               <ul className="dropdown-menu">
