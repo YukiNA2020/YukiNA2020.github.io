@@ -6,6 +6,8 @@ import WorkExperience from "./workExperience/WorkExperience";
 import Blogs from "./blogs/Blogs";
 import Footer from "../components/footer/Footer";
 import Talks from "./talks/Talks";
+import TravelPhotos from "./travelPhotos/TravelPhotos";
+import RadioPlay from "./radioPlay/RadioPlay";
 import Podcast from "./podcast/Podcast";
 import Education from "./education/Education";
 import ScrollToTopButton from "./topbutton/Top";
@@ -53,6 +55,8 @@ const Main = () => {
             <WorkExperience />
             <Blogs />
             <Talks />
+            <TravelPhotos />
+            <RadioPlay />
             <Twitter />
             <Podcast />
             <Profile />

@@ -100,6 +100,12 @@ function Header() {
                     <a href="#talks">{t("nav.talks")}</a>
                   </li>
                 )}
+                <li>
+                  <a href="#travel-photos">{t("nav.travelPhotos")}</a>
+                </li>
+                <li>
+                  <a href="#radio-play">{t("nav.radioPlay")}</a>
+                </li>
               </ul>
             </li>
           )}

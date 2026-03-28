@@ -1,0 +1,17 @@
+@import "../../_globalColor";
+
+.travel-photos-header-text {
+  font-size: 56px;
+  font-weight: 400;
+}
+
+.subTitle {
+  color: $subTitle;
+}
+
+@media (max-width: 768px) {
+  .travel-photos-header-text {
+    font-size: 30px;
+    text-align: center;
+  }
+}
