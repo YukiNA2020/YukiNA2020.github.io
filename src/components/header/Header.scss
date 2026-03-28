@@ -31,7 +31,6 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  overflow: hidden;
 }
 
 .grey-color {
@@ -52,10 +51,12 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   z-index: 100;
-  overflow: hidden;
+  padding: 0;
+  list-style: none;
 }
 
-.dropdown:hover .dropdown-menu {
+.dropdown:hover .dropdown-menu,
+.dropdown.dropdown-open .dropdown-menu {
   display: block;
 }
 
@@ -65,6 +66,10 @@
 
 .header .dropdown-menu {
   background-color: $lightBackground1;
+}
+
+.dropdown-menu li {
+  display: block !important;
 }
 
 .header li a {

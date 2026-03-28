@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React, {useState, useContext} from "react";
 import Headroom from "react-headroom";
 import { useTranslation } from "react-i18next";
 import "./Header.scss";
@@ -22,6 +22,7 @@ function Header() {
   const viewSkills = skillsSection.display;
   const viewBlog = blogSection.display;
   const viewTalks = talkSection.display;
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   return (
     <Headroom>
@@ -46,7 +47,12 @@ function Header() {
             </li>
           )}
           {(viewExperience || viewEducation) && (
-            <li className="dropdown">
+            <li
+              className={"dropdown" + (dropdownOpen ? " dropdown-open" : "")}
+              onMouseEnter={() => setDropdownOpen(true)}
+              onMouseLeave={() => setDropdownOpen(false)}
+              onClick={() => setDropdownOpen(!dropdownOpen)}
+            >
               <a href="#experience">{t("nav.experience")}</a>
               <ul className="dropdown-menu">
                 {viewEducation && (
