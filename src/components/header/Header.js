@@ -23,6 +23,7 @@ function Header() {
   const viewTalks = talkSection.display;
   const [experienceOpen, setExperienceOpen] = useState(false);
   const [aboutOpen, setAboutOpen] = useState(false);
+  const [lifeOpen, setLifeOpen] = useState(false);
 
   return (
     <header className={isDark ? "dark-menu header" : "header"}>
@@ -80,14 +81,26 @@ function Header() {
               </ul>
             </li>
           )}
-          {viewBlog && (
-            <li>
-              <a href="#blogs">{t("nav.blogs")}</a>
-            </li>
-          )}
-          {viewTalks && (
-            <li>
-              <a href="#talks">{t("nav.talks")}</a>
+          {(viewBlog || viewTalks) && (
+            <li
+              className={"dropdown" + (lifeOpen ? " dropdown-open" : "")}
+              onMouseEnter={() => setLifeOpen(true)}
+              onMouseLeave={() => setLifeOpen(false)}
+              onClick={() => setLifeOpen(!lifeOpen)}
+            >
+              <a href="#blogs">{t("nav.life")}</a>
+              <ul className="dropdown-menu">
+                {viewBlog && (
+                  <li>
+                    <a href="#blogs">{t("nav.blogs")}</a>
+                  </li>
+                )}
+                {viewTalks && (
+                  <li>
+                    <a href="#talks">{t("nav.talks")}</a>
+                  </li>
+                )}
+              </ul>
             </li>
           )}
           <li>
