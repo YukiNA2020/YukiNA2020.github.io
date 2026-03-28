@@ -26,7 +26,7 @@ function Header() {
   const [aboutOpen, setAboutOpen] = useState(false);
 
   return (
-    <Headroom>
+    <Headroom disable>
       <header className={isDark ? "dark-menu header" : "header"}>
         <a href="/" className="logo">
           <span className="grey-color"> &lt;</span>
