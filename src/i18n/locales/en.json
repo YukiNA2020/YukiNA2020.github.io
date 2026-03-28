@@ -10,12 +10,10 @@
     "projects": "Projects",
     "blogs": "Blogs",
     "talks": "Talks",
-    "resume": "Resume",
     "contact": "Contact"
   },
   "buttons": {
     "contact": "Contact Me",
-    "resume": "Download My Resume",
     "viewProject": "View Project",
     "viewCode": "View Code"
   },

@@ -25,7 +25,6 @@ const greeting = {
   subTitle: emoji(
     "A passionate learner and thinker 🚀 from China. I love meeting different people and exploring diverse cultures. I hope to gain more different experiences in this limited life."
   ),
-  resumeLink: "", // Add your resume link here if you have one, or leave empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -258,15 +257,6 @@ const podcastSection = {
   display: true // Set false to hide this section, defaults to true
 };
 
-// Resume Section
-const resumeSection = {
-  title: "Resume",
-  subtitle: "Feel free to download my resume",
-
-  // Please Provide with Your Podcast embeded Link
-  display: true // Set false to hide this section, defaults to true
-};
-
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
@@ -305,6 +295,5 @@ export {
   contactInfo,
   githubProfile,
   twitterDetails,
-  isHireable,
-  resumeSection
+  isHireable
 };

@@ -10,12 +10,10 @@
     "projects": "项目",
     "blogs": "博客",
     "talks": "演讲",
-    "resume": "简历",
     "contact": "联系"
   },
   "buttons": {
     "contact": "联系我",
-    "resume": "下载我的简历",
     "viewProject": "查看项目",
     "viewCode": "查看代码"
   },
