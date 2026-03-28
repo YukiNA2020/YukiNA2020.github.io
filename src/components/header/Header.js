@@ -1,5 +1,4 @@
 import React, {useState, useContext} from "react";
-import Headroom from "react-headroom";
 import { useTranslation } from "react-i18next";
 import "./Header.scss";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
@@ -26,8 +25,7 @@ function Header() {
   const [aboutOpen, setAboutOpen] = useState(false);
 
   return (
-    <Headroom disable>
-      <header className={isDark ? "dark-menu header" : "header"}>
+    <header className={isDark ? "dark-menu header" : "header"}>
         <a href="/" className="logo">
           <span className="grey-color"> &lt;</span>
           <span className="logo-name">{greeting.username}</span>
@@ -103,7 +101,6 @@ function Header() {
           </li>
         </ul>
       </header>
-    </Headroom>
   );
 }
 

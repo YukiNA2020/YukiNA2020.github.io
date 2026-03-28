@@ -5,3 +5,8 @@
   color: white;
   transition: "0.1s";
 }
+
+.dark-mode > div,
+body > #root > div > div {
+  padding-top: 70px;
+}
