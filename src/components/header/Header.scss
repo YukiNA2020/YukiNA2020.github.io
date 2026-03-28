@@ -38,6 +38,35 @@
   color: $subTitle;
 }
 
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 180px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dark-menu .dropdown-menu {
+  background-color: $darkBackground;
+}
+
+.header .dropdown-menu {
+  background-color: $lightBackground1;
+}
+
 .header li a {
   display: block;
   padding: 15px 20px;

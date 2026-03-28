@@ -8,6 +8,7 @@ import LanguageToggle from "../languageToggle/LanguageToggle";
 import {
   greeting,
   workExperiences,
+  educationInfo,
   skillsSection,
   blogSection,
   talkSection
@@ -17,6 +18,7 @@ function Header() {
   const {isDark} = useContext(StyleContext);
   const { t } = useTranslation();
   const viewExperience = workExperiences.display;
+  const viewEducation = educationInfo.display;
   const viewSkills = skillsSection.display;
   const viewBlog = blogSection.display;
   const viewTalks = talkSection.display;
@@ -43,9 +45,21 @@ function Header() {
               <a href="#skills">{t("nav.skills")}</a>
             </li>
           )}
-          {viewExperience && (
-            <li>
-              <a href="#experience">{t("nav.experience")}</a>
+          {(viewExperience || viewEducation) && (
+            <li className="dropdown">
+              <a>{t("nav.experience")}</a>
+              <ul className="dropdown-menu">
+                {viewEducation && (
+                  <li>
+                    <a href="#education">{t("nav.educationExp")}</a>
+                  </li>
+                )}
+                {viewExperience && (
+                  <li>
+                    <a href="#experience">{t("nav.workExp")}</a>
+                  </li>
+                )}
+              </ul>
             </li>
           )}
           {viewBlog && (
